@@ -1,9 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import MenuBar from "@/components/MenuBar";
 import Footer from "@/components/Footer";
+import ImageProfile from "@/components/ImageProfile";
 export default function IndexPage() {
   return (
     <div>
-      <MenuBar />
+      <MenuBar page={"หลัก"}/>
       <div>
         <div className="alert alert-warning" role="alert">
           <p className="font-title krub-regular-italic">
@@ -18,11 +20,7 @@ export default function IndexPage() {
           I'm a student at Rajamangala University of Technology <br />
           Pom pud thai dai nid noy english mai dai loei
         </p>
-        <img
-          src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/475762887_2022185338227570_8083819797358680838_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fEtGY61w1UsQ7kNvwEw6eFH&_nc_oc=AdmqjXh-oIgCF48xSRYAxLpl3xNuF8092CmPwpaXIVW_LimeL1-9_2V-VTIFOJ7as14&_nc_zt=23&_nc_ht=scontent.fbkk10-1.fna&_nc_gid=d3ROGrQCk3QGPiSVDGD3Aw&oh=00_AfEcP2TCTe7urY-33JOG8jdpYFNZ7hGbJBDXflN0RAoNsA&oe=681A132D"
-          alt="Nawapol Picture"
-          className="section1-profile-picture"
-        />
+        <ImageProfile src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/475762887_2022185338227570_8083819797358680838_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fEtGY61w1UsQ7kNvwEw6eFH&_nc_oc=AdmqjXh-oIgCF48xSRYAxLpl3xNuF8092CmPwpaXIVW_LimeL1-9_2V-VTIFOJ7as14&_nc_zt=23&_nc_ht=scontent.fbkk10-1.fna&_nc_gid=d3ROGrQCk3QGPiSVDGD3Aw&oh=00_AfEcP2TCTe7urY-33JOG8jdpYFNZ7hGbJBDXflN0RAoNsA&oe=681A132D"/>
         <p className="text krub-regular">
           ผมพูดไทยได้นิดหน่อยครับ <br />
           อังกฤษไม่ได้เลย
@@ -65,11 +63,6 @@ export default function IndexPage() {
   );
 }
  
-
-
-     ll'';
-     l'l 
-
 
 
       

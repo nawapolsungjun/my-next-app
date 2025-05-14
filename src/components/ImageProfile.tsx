@@ -4,11 +4,13 @@ type ImageProfileProps = {
 export default function ImageProfile(props: ImageProfileProps){
     return(
         <div className="flex justify-center">
+            <div className="mt-4 w-100">
         <img
             src={props.src}
             alt="Nawapol'S Profile Picture"
             className="rounded"
             />
+            </div>
         </div>
     );
 }

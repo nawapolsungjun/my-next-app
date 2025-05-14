@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Footer";
 import MenuBar from "@/components/MenuBar";
+import MovieCard from "@/components/MovieCard";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -15,26 +16,27 @@ export default function UseEffectPage() {
       .then((response) => {
         console.log(response);
         setMovieList(response.data.results);
+      })
+      .catch(() => {
+        alert("เกิดข้อผิดผลาดในการดึงข้อมูล");
       });
   }, []);
 
   return (
     <div>
       <MenuBar page={"เรียนรู้ Use-Effect"} />
-      {movieList.map((movie, index) => (
-        <div className="flex justify-center">
-          <div className=" bg-blue-600 mb-4 w-50">
-          <img
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              alt={movie.title} 
-            />
-            <h2 className="text-center">{movie.title}</h2>
-            <p className="text-center">{movie.overview}</p>
-          
-          </div>
-        </div>
-      ))}
-
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      {movieList.map(function (movie, index) {
+        return (
+          <MovieCard
+            key={index}
+            title={movie.title}
+            description={movie.overview}
+            image={movie.poster_path}
+          />
+        );
+      })}
+      </div>
       <Footer />
     </div>
   );

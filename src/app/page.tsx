@@ -20,7 +20,7 @@ export default function IndexPage() {
           I'm a student at Rajamangala University of Technology <br />
           Pom pud thai dai nid noy english mai dai loei
         </p>
-        <ImageProfile src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/475762887_2022185338227570_8083819797358680838_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fEtGY61w1UsQ7kNvwEw6eFH&_nc_oc=AdmqjXh-oIgCF48xSRYAxLpl3xNuF8092CmPwpaXIVW_LimeL1-9_2V-VTIFOJ7as14&_nc_zt=23&_nc_ht=scontent.fbkk10-1.fna&_nc_gid=d3ROGrQCk3QGPiSVDGD3Aw&oh=00_AfEcP2TCTe7urY-33JOG8jdpYFNZ7hGbJBDXflN0RAoNsA&oe=681A132D"/>
+        <ImageProfile src="https://scontent.fbkk7-3.fna.fbcdn.net/v/t39.30808-6/406222264_1740300689749371_1241718534499329507_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=b1yS-3V6g2EQ7kNvwFMh173&_nc_oc=AdnRCQ0ARWbjchRDjOAdekq8afGxjcVPldro6mn_keat4a91At_QpnRgUeHwodHxK8c&_nc_zt=23&_nc_ht=scontent.fbkk7-3.fna&_nc_gid=9iebk6XA3dWM37LaN5teJw&oh=00_AfKvLynThog4c6opk8DvuUlhTawyDZnWRAI-_IsnylUS0w&oe=682A2203"/>
         <p className="text krub-regular">
           ผมพูดไทยได้นิดหน่อยครับ <br />
           อังกฤษไม่ได้เลย

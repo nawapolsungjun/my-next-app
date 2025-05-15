@@ -14,9 +14,11 @@ export default function UseEffectPage() {
         "https://api.themoviedb.org/3/trending/all/week?api_key=229a6a0f891df5bf1176a4668af885c6"
       )
       .then((response) => {
-        console.log(response);
-        setMovieList(response.data.results);
-      })
+      const tvList = response.data.results.filter(
+        (item: any) => item.media_type === "movie"
+      );
+      setMovieList(tvList);
+    })
       .catch(() => {
         alert("เกิดข้อผิดผลาดในการดึงข้อมูล");
       });
@@ -28,12 +30,13 @@ export default function UseEffectPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
       {movieList.map(function (movie, index) {
         return (
-          <MovieCard
+        <MovieCard 
             key={index}
             title={movie.title}
+            name={movie.name}
             description={movie.overview}
             image={movie.poster_path}
-          />
+        />
         );
       })}
       </div>
